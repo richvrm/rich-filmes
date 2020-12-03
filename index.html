@@ -1,0 +1,442 @@
+ <!--Aluno: Richard Vinícius R. Mariano
+     Matricula: 598894   -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Rich Fimes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+
+<body>
+
+<div class="all">
+
+ <header class="container header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-1">
+                        <img src="imgs/logo.png" class="logo">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-11 memu_area">
+                        <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a class="nav-link" href="#">lançamentos</a>
+                            <a class="nav-link" href="#">em destaque</a>
+                            <a class="nav-link" href="#">avaliações</a>
+                            <a class="nav-link" href="#">entrevistas & makingof</a>
+                            <a class="nav-link" href="#">novidades</a>
+                            <input type="text" id="txtBusca" placeholder="Pesquisar Filme"/>
+                           <button onclick="return busca() " id="btnBusca">Buscar</button>
+                            <button onclick="return limparbusca() " id="btnBusca">Limpar</button>
+                          <!--  <button onclick="window.location.reload()" id="btnBusca">Buscar</button>-->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+  </header>
+
+
+
+    <main class="container main">
+    <div id="resultado-busca">
+
+    </div>
+
+
+        <!--Carrosel com lançamentos-->
+		<div class="row">
+			<div class="col-md-12" id="lanca">
+				<h2>Lançamento</h2>
+			</div>
+		</div>
+
+        <div class="row">
+
+            <div class="col-12">
+                
+                
+                <div class="row main_area">
+
+                    <div class="col-12 col-sm-12 col-md-12">
+                        
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                                <div class="carousel-inner" >
+                              <div class="carousel-item active">
+                              <div class="container">
+									<div class="row">
+										<div class="col-md-7 videolan">
+                                           <iframe width="560" height="315" src="https://www.youtube.com/embed/JGZdBI-CaLY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                             <br><br><br><br>
+
+										</div>
+										<div class="col-md-5 lantext">
+											<h2>The French Dispatch</h2>
+											<p align="justify"> Uma carta de amor ao jornalismo. The French Dispatch se passa num jornal americano em uma cidade fictícia da França do século XX. Esta dá vida a uma coleção de histórias publicadas na "The French Dispatch Magazine".
+
+											</p>
+											<p>
+												<b>Diretor:</b> Wes Anderson <b>Roteiro:</b> Wes Anderson
+                                                <b>Estreia:</b> 2020
+											</p>
+											<p><b>Elenco:</b>
+												Timothée Chalamet | Bill Murray | Tilda Swinton | Benicio del Toro
+                                                
+											</p>
+											<p><b>Avaliação: <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/></p></b>
+											
+										</div>
+									</div>
+                            </div>                                
+
+
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="container">
+									<div class="row">
+										<div class="col-md-7 videolan">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LdOM0x0XDMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <br><br><br><br>
+										</div>
+										<div class="col-md-5 lantext">
+											<h2>Tenet</h2>
+											<p align="justify"> Um agente da CIA, conhecido como O Protagonista (John David Washington), é recrutado por uma organização misteriosa chamada Tenet para participar de uma missão de escala global. Eles precisam impedir que Andrei Sator (Kenneth Branagh), um renegado oligarca russo com meios de se comunicar com o futuro, inicie a Terceira Guerra Mundial. 
+
+											</p>
+											<p>
+												<b>Diretor:</b> Christopher Nolan <b>Roteiro:</b> Christopher Nolan 
+                                                <b>Estreia:</b> 2020
+											</p>
+											<p><b>Elenco:</b>
+												Robert Pattinson | John David Washington 
+											</p>
+											<p><b>Avaliação: <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/></p></b>
+											
+										</div>
+									</div>
+                                 </div>   
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="container">
+									<div class="row">
+										<div class="col-md-7 videolan">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EIzazUv2gtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <br><br><br><br>
+										</div>
+										<div class="col-md-5 lantext">
+											<h2>The Devil All The Time</h2>
+											<p align="justify">Ambientada entre a Segunda Guerra Mundial e a Guerra do Vietnã, O Diabo de Cada Dia acompanha diversos personagens num canto esquecido de Ohio, os quais a vida acabam se conectando. 
+
+									       </p>
+											<p>
+												<b>Diretor:</b> Antonio Campos <b>Roteiro:</b> Antonio Campos
+                                                <b>Estreia:</b> 2020
+											</p>
+											<p><b>Elenco:</b>
+												Tom Holland | Bill Skarsgård | Robert Pattinson
+                                                
+											</p>
+											<p><b>Avaliação: <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/></p></b>
+										</div>
+									</div>
+                                 </div>   
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="container">
+									<div class="row">
+										<div class="col-md-7 videolan">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CpBLtXduh_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <br><br><br><br>
+										</div>
+										<div class="col-md-5 lantext">
+											<h2>PalmSpring</h2>
+											<p align="justify">Nyles (Andy Samberg) é um homem relaxado e sem preocupações. Quando em um casamento em Palm Springs ele conhece Sarah (Cristin Milioti), a relutante madrinha do casamento, ele se vê incapacitado de deixá-la ou deixar o local. Confira a classificação indicativa no Portal Online da Cultura Digital.
+
+									       </p>
+											<p>
+												<b>Diretor:</b> Max Barbakow <b>Roteiro:</b> Andy Siara
+                                                <b>Estreia:</b> 2020
+											</p>
+											<p><b>Elenco:</b>
+												Andy Samberg | Cristin Milioti | Camila Mendes
+                                                
+											</p>
+											<p><b>Avaliação: <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/></p></b>
+										</div>
+									</div>
+                                 </div>   
+                              </div>
+                           </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    
+                    </div>
+
+        
+                </div>
+
+ <hr>
+
+        <!--Filmes em Destaque-->
+		<div class="row">
+			<div class="col-md-9" id="title">
+				<h2>Em destaque</h2>
+			</div>
+<!-- 
+			<div class="col-md-offset-6 col-md-3" id="categoria">
+                    <select name="genero" id="selecionar">
+                        <option value="Todos">Populares</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Terror">Terror</option>
+                        
+                        
+                    </select>
+
+			</div>
+        -->
+		</div>
+		<div class="row" id="destq">
+		<!--	<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="imgs/mid.jpg" alt="filme1"/>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="imgs/mad.jpg" alt="filme2"/>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="imgs/witch.jpg" alt="filme3"/>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="imgs/callme.jpg" alt="filme4"/>
+			</div>
+        -->
+                
+        
+        </div>
+
+		<div class="row">
+			<div class="ptb20 col-md-offset-9 col-md-12" id="carregar">
+				<button class="botao" onclick="return populares()">+ Carregar mais filmes</button>
+			</div>
+        </div>
+
+        
+
+ <hr>
+
+        <!--Avaliação de criticos-->
+		<div class="row">
+			<div class="col-md-4" id="title">
+				<h2>Ultimas Avaliações</h2>
+			</div>
+
+		</div>
+		<div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-1">
+                <img src="imgs/iconP.png" alt="perfil1" height="60" width="60"/>            
+            </div>
+
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<h3>Pablo Villaça</h3>
+                <p align="justify"><b>Avaliação:</b> "Uma investifação sobre a formação de nossas individualidades, de nossas memórias e da coleção de dores que nos tornam quem somos."
+                <br>
+                <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/> <b>06/09/2020</b>
+			</div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-1">
+                <img src="imgs/iconP.png" alt="perfil1" height="60" width="60"/>                 
+            </div>
+
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<h3>Luan Marcel</h3>
+                <p align="justify">"É de fato uma experiência imersiva muito satisfatória, se apropria dos seus sentidos e te torna em muitos momentos parte daquele acontecido.
+                    <br>
+                <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/> <b>16/04/2020</b>
+			</div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-1">
+                <img src="imgs/iconP.png" alt="perfil1" height="60" width="60"/>                 
+            </div>
+
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<h3>Richard Mariano</h3>
+                <p align="justify">"A ambiguidade a todo momento faz você questionar se deve sentir empatia pelo personagem ou não, logo, tudo que consegue sentir é angustia."
+                <br>
+                <img class="aval" src="imgs/avaliacao.png" alt="avaliacao5" width="100px"/> <b>24/08/2020</b>
+			</div>
+        </div>
+<!-- 
+		<div class="row">
+			<div class="ptb20 col-md-offset-9 col-md-12" id="carregar">
+				<button class="botao">+ Carregar mais avaliação</button>
+			</div>
+
+       
+        </div>
+  -->
+      
+        <hr>
+
+		<div class="row">
+			<div class="col-md-4" id="title">
+				<h2>Entrevistas e Making of</h2>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+			<iframe width="350" height="196" src="https://www.youtube.com/embed/U7HpPOmlzZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p><b>Filme:</b>The Witch</p>
+				<p><b>Diretor:&nbsp;</b> Robert Eggers<br>
+                <b>Roteiro:</b> Robert Eggers&nbsp;<b>Estreia:</b> 2015 </p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <iframe width="350" height="196" src="https://www.youtube.com/embed/EkFua0fNWjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p><b>Filme:</b>Blade Runner 2049</p>
+				<p><b>Diretor:&nbsp;</b> Denis Villeneuve<br>
+                <b>Roteiro:</b> Hampton Fancher&nbsp;<b>Estreia:</b> 2017 </p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+<iframe width="350" height="196" src="https://www.youtube.com/embed/Hd0OSaetUFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p><b>Filme:</b>Parasite</p>
+				<p><b>Diretor:&nbsp;</b> Bong Joon-ho<br>
+                <b>Roteiro:</b> Bong Joon-ho&nbsp;<b>Estreia:</b> 2019 </p>
+			</div>
+        </div>
+
+<!-- 
+		<div class="row">
+			<div class="ptb20 col-md-offset-9 col-md-12" id="carregar">
+				<button class="botao">+ Carregar mais filmes</button>
+			</div>
+			</div>
+-->
+        <hr>
+        </div>
+
+        
+      
+        <!--Ultimas novidades-->
+		<div class="row">
+            
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 " id="title">
+                <h2>&nbsp;Novidades</h2>
+                <div class="row" >
+                    <div class=" col-lg-4">
+                        <img src="imgs/lion-king.jpg" class="news">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h4>Rei Leão</h4>  
+                        <p align="justify">O live-action de O Rei Leão lançado pela Disney em 2019 vai ganhar uma sequência com direção de Barry Jenkins. De acordo com o Deadline, o cineasta responsável por Moonlight: Sob a Luz do Luar vai comandar o segundo filme, que terá o retorno de Jeff Nathanson como roteirista. <br>
+                    <button class="tags">Disney</button>
+                    <button class="tags">Rei Leão</button>
+                    <button class="tags">live-action</button>
+                    </div>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class=" col-lg-4">
+                        <img src="imgs/electro1.jpg" class="news">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h4>Homem Aranha 3</h4>  
+                        <p align="justify">Jamie Foxx fará parte do elenco do novo filme do Homem-Aranha vivendo um personagem que conhecemos muito bem. O ator interpretou o vilão Electro em O Espetacular Homem-Aranha 2, protagonizado por Andrew Garfield, e voltará a fazer o mesmo personagem no novo filme.
+                   <br>
+                    <button class="tags">Homem Aranha</button>
+                    <button class="tags">Jamie Foxx</button>
+                    <button class="tags">Tom Holland</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class=" col-lg-4">
+                        <img src="imgs/matrix.jpg" class="news">
+                    </div>
+                          <div class=" col-lg-8">
+                                <h4>Matrix 4</h4>  
+                                <p align="justify">Daniel Bernhardt, que interpretou o Agente Johnson. O personagem, que liderou os poderosos agentes da Matrix no segundo filme, é mais um retorno confirmado para a nova sequência, que terá também Keanu Reeves como Neo e Carrie-Anne Moss como Trinity.
+                         <br>
+                        <button class="tags">Matrix</button>
+                        <button class="tags">Keanu Reeves</button>
+                        <button class="tags">Cult</button>
+                          </div>
+                </div>
+			</div>
+
+            <!--Sobre o site e Editorial-->
+			<div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                <div class=" col-lg-9" id="title">
+                    <h2>Sobre</h2>
+                        <p align="justify">RichFilmes é um site para todos aqueles que amam Filmes. Criado em 2020 por Richard Mariano, grande entusiasta de filmes, e achou aqui um lugar para poder compartilhar suas opiniões e sua paixão. 
+                        <p align="justify">Possui catálogo completo com as informações de todos os filmes que tanto amamos, aqui você encontra os últimos lançamentos e os filmes com maiores destaques no momento, permitindo filtrar pelo seu gênero preferido.
+                        <p align="justify">Encontra também avaliações de críticos profissionais, entrevistas, trailers, making of, além das últimas novidades do mundo do audiovisual.
+               
+               
+                    <br>
+                    <h2>Editorial</h2>
+                    <p><b>Redação:</b> Richard V. R. Mariano</p>
+			        <p><b>Pesquisa:</b> Gabriel Gonçalves</p>
+                    <p><b>Gerente Geral:</b> Ana Luisa de Moura</p>
+
+                    <br>
+                    <br>
+                    <h4>redes sociais:</h4>
+				    <img src="imgs/face.png" alt="face" width="40px"/>
+				    <img src="imgs/twitter.png" alt="twitter" width="40px"/>
+                    <img src="imgs/insta.png" alt="insta"  width="40px"/>
+                </div>
+		   </div>
+
+
+      </div>
+
+
+    </main>
+
+		<footer class="container footer">
+				
+				<span class="cop">
+					Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b>
+				</span>
+                <img src="imgs/logo.png" class="logof"/>
+
+                <br>
+                <br>
+                <br>
+        </footer>
+
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+<script src="api.js"></script>
+
+
+</html>

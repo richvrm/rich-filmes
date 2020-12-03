@@ -1,0 +1,164 @@
+ /*Aluno: Richard Vinícius R. Mariano
+     Matricula: 598894   */
+
+.all{
+    background: black;
+}
+
+.header{
+    background: #C0C0C0;
+    text-align: center;
+}
+
+.header_area{
+    padding: 20px;
+}
+
+.active{
+    background-color: red !important;
+}
+
+.logo{
+    width: 70px;
+}
+
+.logof{
+    width: 60px;
+    float: right;
+}
+
+
+.main{
+    
+}
+
+.main .card{
+    margin-bottom: 15px;
+}
+
+.main_area{
+    margin-bottom: 20px;
+}
+
+
+.modal-body img{ width: 100%;}
+
+
+
+.memu_area2 nav a{
+    background-color: #C0C0C0;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.memu_area2 nav a:hover{
+    background-color: #C0C0C0;
+}
+
+.container{
+    background-color: white;
+
+    
+}
+
+.nav-link{
+    padding-right:20px;
+    color: black;
+}
+
+.nav-pills{
+    background-color: none;
+}
+.header_area{
+    background-color: gray;
+}
+
+.main_area{
+    padding: 10px;
+    background-color: whtie;
+}
+
+}
+.videolan{
+    margin-top:5px;
+}
+
+.news{
+    width: 180px;
+}
+
+.botao{
+    background: #4F4F4F;
+    border: solid black 1px;
+    border-radius: 20px;
+    color: white;
+    font-family: Open Sans;
+    font-size: 17px;
+
+}
+
+.tags{
+    background: gray;
+    border: solid black 1px;
+    border-radius: 20px;
+    color: black;
+    font-family: Open Sans;
+    font-size: 14px;
+}
+
+
+#txtBusca{
+  float:left;
+  background-color:white;
+  padding-left:5px;
+  padding-top:8px;
+  font-size:12px;
+  border:solid 2px black;
+  border-radius:7px 0 0 7px;
+  height:32px;
+  width:151px;
+  color: black; 
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background: 	black;
+  padding-left:5px;
+  padding-top:5px;
+  font-size:12px;
+  color: white; 
+}
+
+#lanca{
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+#title{
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#categoria{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+#carregar{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    text-align: right;
+
+
+
